@@ -103,12 +103,10 @@ public class MainActivity extends AppCompatActivity {
 		super.onConfigurationChanged(newConfig);
 		orientation = newConfig.orientation;
 		if (orientation == ORIENTATION_LANDSCAPE) {
-			Log.i("=====>", "-------------横屏-------------");
 			llInfo.setVisibility(View.VISIBLE);
 			FriendBean friendBean = adapter.getList().get(index);
 			setDataInfo(friendBean);
 		} else {
-			Log.i("=====>", "-------------竖屏-------------");
 			llInfo.setVisibility(View.GONE);
 		}
 	}
