@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * @Description: 用一句话描述
- * @CreateTime: 2020年02月21日 17:20
+ * @CreateTime: 2020年02月21日
  * @CreateAuthor: Mack
  */
 public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.MyViewHolder> {

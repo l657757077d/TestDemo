@@ -7,7 +7,7 @@ import org.greenrobot.greendao.annotation.Generated;
 
 /**
  * @Description: 用一句话描述
- * @CreateTime: 2020年02月21日 17:23
+ * @CreateTime: 2020年02月21日
  * @CreateAuthor: Mack
  */
 @Entity(

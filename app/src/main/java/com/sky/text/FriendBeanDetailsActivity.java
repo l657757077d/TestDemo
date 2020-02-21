@@ -12,7 +12,7 @@ import com.sky.text.greendao.DBManager;
 
 /**
  * @Description: 用一句话描述
- * @CreateTime: 2020年02月21日 18:26
+ * @CreateTime: 2020年02月21日
  * @CreateAuthor: Mack
  */
 public class FriendBeanDetailsActivity extends AppCompatActivity {

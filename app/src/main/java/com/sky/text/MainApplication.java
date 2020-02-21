@@ -6,7 +6,7 @@ import com.sky.text.greendao.DBManager;
 
 /**
  * @Description: 用一句话描述
- * @CreateTime: 2020年02月21日 19:46
+ * @CreateTime: 2020年02月21日
  * @CreateAuthor: Mack
  */
 public class MainApplication extends Application {
