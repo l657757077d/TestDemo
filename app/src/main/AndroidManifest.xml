@@ -10,8 +10,9 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:supportsRtl="true"
       android:theme="@style/AppTheme">
-    <activity android:name=".MainActivity"
-        android:configChanges="orientation|keyboard|layoutDirection|screenSize">
+    <activity
+        android:name=".MainActivity"
+        android:configChanges="orientation|layoutDirection|screenSize">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
@@ -19,9 +20,7 @@
       </intent-filter>
     </activity>
 
-    <activity
-        android:name=".FriendBeanDetailsActivity"
-        android:configChanges="orientation|keyboardHidden|screenSize" />
+    <activity android:name=".FriendBeanDetailsActivity" />
   </application>
 
   <uses-permission android:name="android.permission.INTERNET" />

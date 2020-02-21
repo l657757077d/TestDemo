@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -125,8 +124,8 @@ public class MainActivity extends AppCompatActivity {
 				FriendBean friendBean = adapter.getList().get(index);
 				friendBean.setRating(i);
 				DBManager.getInstance().saveOrUpdateFriend(friendBean);
-				Toast.makeText(MainActivity.this.getApplicationContext(), String.valueOf(i),
-					Toast.LENGTH_LONG).show();
+				//Toast.makeText(MainActivity.this.getApplicationContext(), String.valueOf(i),
+				//	Toast.LENGTH_LONG).show();
 			}
 		});
 	}

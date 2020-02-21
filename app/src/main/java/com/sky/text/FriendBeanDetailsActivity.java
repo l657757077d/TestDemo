@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -48,8 +47,8 @@ public class FriendBeanDetailsActivity extends AppCompatActivity {
 				float i = mRatingBar.getRating();
 				friendBean.setRating(i);
 				DBManager.getInstance().saveOrUpdateFriend(friendBean);
-				Toast.makeText(FriendBeanDetailsActivity.this.getApplicationContext(),
-					String.valueOf(i), Toast.LENGTH_LONG).show();
+				//Toast.makeText(FriendBeanDetailsActivity.this.getApplicationContext(),
+				//	String.valueOf(i), Toast.LENGTH_LONG).show();
 			}
 		});
 	}
