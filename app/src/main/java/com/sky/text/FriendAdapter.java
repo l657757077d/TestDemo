@@ -26,6 +26,11 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.MyViewHold
 		this.mData = mData;
 	}
 
+	public void onRefresh(List<FriendBean> mData){
+		this.mData=mData;
+		notifyDataSetChanged();
+	}
+
 	@NonNull @Override
 	public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 		View view = LayoutInflater.from(mContext).inflate(R.layout.item_friend, parent, false);

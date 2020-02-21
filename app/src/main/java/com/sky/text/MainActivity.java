@@ -39,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
 		initListener();
 	}
 
+	@Override protected void onResume() {
+		super.onResume();
+		initData();
+	}
+
 	/**
 	 * 初始化数据
 	 */
@@ -64,6 +69,11 @@ public class MainActivity extends AppCompatActivity {
 				"http://img2.imgtn.bdimg.com/it/u=4066494201,2784898485&fm=26&gp=0.jpg", "笑笑6",
 				"笑一笑十年少", 3));
 			DBManager.getInstance().saveOrUpdateFriend(mList);
+		} else {
+			if(adapter!=null){
+				adapter.onRefresh(mList);
+			}
+
 		}
 	}
 
